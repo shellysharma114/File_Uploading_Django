@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    box-shadow: 1px 1px 10px 5px rgba(203, 55, 47, 0.7);
+}
+nav ul{
+    margin-left: 100px;
+    background-color: rgb(255, 255, 255);
+}
+nav ul li{
+    display: inline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    background-color: rgb(255, 255, 255);
+}
+nav ul li:hover{
+    border-bottom: 3px solid rgba(154, 53, 163, 0.737);
+    font-weight: bold;
+}
+.heading{
+    color: rgb(0,0,0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.form-container{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(154, 53, 163);
+    margin-top: 100px;
+    margin-left: 35%;
+    padding: 10px;
+    box-shadow: 5px 5px 1px 1px rgb(154, 53, 163);
+}
+.signup-form{
+    width: 30%;
+    margin-left: 40%;
+    padding: 30px;
+}
+.signup-form .heading{
+    text-align: center;
+}
+.signup-form .input_field{
+    width: 95%;
+}
+.input_field {
+    width: 300px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(154, 53, 163);
+    outline: none;
+    font-size: 20px;
+}
+.btn{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(154, 53, 163);
+    border: 2px solid rgb(154, 53, 163);
+    padding: 10px;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: rgb(154, 53, 163);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.main-content{
+    width: 500px;
+    height: auto;
+    border: 2px solid  rgb(154, 53, 163);
+    box-shadow: 5px 5px 1px 1px rgb(154, 53, 163);
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: 35%;
+    text-align: center;
+}
+
+.file_select{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(0,0,0);
+}
+input::file-selector-button{
+    background-color: rgb(154, 53, 163);
+    color: rgb(0,0,0);
+    padding: 10px;
+    border: 2px solid rgb(0,0,0);
+    font-size: 20px;
+}
+.right_float_links{
+    margin: 0;
+    padding: 5px;
+    float: right;
+    margin-right: 20px;
+
+}
+
+.files-container{
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    flex-flow: wrap row;
+}
+.files-container .file{
+    border: 2px solid rgb(154, 53, 163);
+    width: 30%;
+    box-shadow: 5px 5px 1px 1px rgb(154, 53, 163);
+    font-size: 25px;
+    margin-left: 150px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+.error{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

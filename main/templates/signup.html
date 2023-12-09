@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Signup
+{% endblock %}
+
+{% block body %}
+    <div class="form-container signup-form">
+        <h2 class="heading">Create Your Account</h2>
+        {% if messages %}
+            {% for message in messages %}
+                <p class="error" style="text-align: center;">{{message}}</p>
+            {% endfor %}
+        {% endif %}
+        <form action="{% url 'signup' %}" method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="Enter Username" name="username" class="input_field uname" required>
+            <br><br>
+            <input type="email" placeholder="Enter Email" name="email" class="input_field email" required>
+            <br><br>
+            <input type="password" placeholder="Enter Password" name="password" class="input_field pwd" required>
+            <br><br><br>
+            <input type="submit" value="Signup" class="btn signup_btn">
+        </form>
+    </div>
+{% endblock %}
